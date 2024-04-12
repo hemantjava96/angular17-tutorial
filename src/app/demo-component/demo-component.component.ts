@@ -9,10 +9,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class DemoComponentComponent {
 
+  //app component sending data to demo component i.e parent --> child
   @Input() inputVariable ="";
 
+  //demo component sending data to app component i.e --> child --> parent
   @Output() currentTime:EventEmitter<string> = new EventEmitter();
-
   sendMessage() {
     this.currentTime.emit(new Date().toDateString());    
   }
