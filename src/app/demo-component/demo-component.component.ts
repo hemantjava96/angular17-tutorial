@@ -12,10 +12,10 @@ export class DemoComponentComponent {
   //app component sending data to demo component i.e parent --> child
   @Input() inputVariable ="";
 
-  //demo component sending data to app component i.e --> child --> parent
+  //demo component sending data to app component i.e --> child to parent
   @Output() currentTime:EventEmitter<string> = new EventEmitter();
   sendMessage() {
-    this.currentTime.emit(new Date().toDateString());    
+    this.currentTime.emit(new Date().toString());    
   }
  
 }

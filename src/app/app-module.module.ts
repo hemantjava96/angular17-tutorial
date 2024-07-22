@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShowUserComponent } from './show-user/show-user.component';
+import { NonstandaloneComponent } from './components/nonstandalone/nonstandalone.component';
 
 
 
 @NgModule({
   declarations: [
-    ShowUserComponent
+    NonstandaloneComponent
   ],
   imports: [
     CommonModule
-  ],
-  exports: [
-    ShowUserComponent
   ]
 })
-export class UserModule { }
+export class AppModuleModule { }

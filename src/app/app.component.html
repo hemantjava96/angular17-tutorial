@@ -1,5 +1,42 @@
-<h4>app component</h4>
+<h4>app component Works...!</h4>
+
+<app-restcall-demo></app-restcall-demo>
+
+<h1 style="color: darkgreen;">communication between Components</h1>
 <h4>{{now}}</h4>
 <app-demo-component [inputVariable]="message" 
 (currentTime)="updateCurrentTime($event)"></app-demo-component>
+
+<h1 style="color: darkgreen;">How to use non-standalone component</h1>
+<p>user module has show-user non-standalone component</p>
+<app-show-user></app-show-user>
+
+<h1 style="color: darkgreen;">Data Binding in Angular</h1>
+
+1. One Way Data Binding
+<ul>
+    <li>
+      Interpolation (" {{ 'variable' }} ")<br>
+      updates the view with components data<br>
+      <br><u>Example:</u> <br>
+
+     {{ " userName : " + userName}} <br>
+      isLoggedIn : {{userName ? "Yes Logged In" : "Not Logged In"}}
+    </li>
+    <li>
+      Property Binding (" [property] ")<br>
+      binds the value of a component property to an HTML property<br>
+      updates the view with component data<br>
+      mostly used to set attributes of HTML elements<br>
+    </li>
+    <li>
+      Event Binding ( "(event)" )<br>
+      binds an event to a method of the component<br>
+      allows component to respond to users action<br>
+    </li>
+  </ul>
+  
+
+
+
 <router-outlet></router-outlet>
